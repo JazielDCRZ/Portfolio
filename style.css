@@ -435,3 +435,21 @@ a:hover:not(.btn, .email, .controls) {
 .escape:hover {
   color: #d75281 !important;
 }
+
+@media (min-width: 990px) {
+  .page-nav {
+    margin-left: 130px !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .page-nav {
+    margin-left: 340px !important;
+  }
+}
+
+@media (min-width: 1400px) {
+  .page-nav {
+    margin-left: 470px !important;
+  }
+}

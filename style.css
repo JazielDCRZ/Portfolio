@@ -10,12 +10,12 @@
 }
 
 .has-scrollbar::-webkit-scrollbar-track {
-  background: hsl(240, 1%, 17%);
+  background: hsl(240, 1%, 64%);
   border-radius: 5px;
 }
 
 .has-scrollbar::-webkit-scrollbar-thumb {
-  background: #d75281;
+  background: #37beb0;
   border-radius: 5px;
 }
 
@@ -33,6 +33,7 @@ li {
   vertical-align: middle;
   border-radius: 50%;
   overflow: hidden;
+  border: 5px solid #0c6170;
 }
 
 .avatar img {
@@ -40,13 +41,18 @@ li {
   width: 100%;
 }
 
+.text-bg-secondary {
+  color: #fff !important;
+  background-color: #0c6170 !important;
+}
+
 .email,
 .email:visited {
   text-decoration: none !important;
-  color: black !important;
+  color: #241e2f !important;
 }
 .email:hover {
-  color: #d75281 !important;
+  color: #0c6170 !important;
 }
 
 .social {
@@ -90,8 +96,8 @@ li {
 }
 
 .timeline-list span {
-  color: #d75281;
-  font-weight: 400;
+  color: #0c6170;
+  font-weight: 600;
   line-height: 1.6;
 }
 
@@ -102,7 +108,7 @@ li {
   left: -30px;
   width: 1px;
   height: calc(100% + 50px);
-  background: #d75281;
+  background: #0c6170;
 }
 
 .timeline-item::after {
@@ -149,6 +155,7 @@ li {
 
 .certificate-item img {
   width: 100%;
+  height: 100%;
   filter: grayscale(1);
   transition: var(0.25s ease);
 }
@@ -175,7 +182,7 @@ li {
 
 .icon-box {
   position: relative;
-  background: #d75281;
+  background: #0c6170;
   width: 30px;
   height: 30px;
   border-radius: 8px;
@@ -192,7 +199,7 @@ li {
   content: "";
   position: absolute;
   inset: 1px;
-  background: #d75281;
+  background: #0c6170;
   border-radius: inherit;
   z-index: -1;
 }
@@ -248,12 +255,12 @@ h4,
   }
 
   body::-webkit-scrollbar-track {
-    background: #3c4048;
+    background: #fff;
   }
 
   body::-webkit-scrollbar-thumb {
     border: 5px;
-    background: #d75281;
+    background: #0c6170;
     border-radius: 20px;
     box-shadow: inset 1px 1px 0 hsla(0, 0%, 100%, 0.11),
       inset -1px -1px 0 hsla(343, 98%, 47%, 0.621);
@@ -264,7 +271,7 @@ h4,
   }
 
   body::-webkit-scrollbar-button {
-    height: 60px;
+    height: 1px;
   }
 }
 
@@ -329,8 +336,8 @@ h4,
 .project-item-icon-box {
   --scale: 0.8;
 
-  background: #eaeaea;
-  color: #d75281;
+  background: #fff;
+  color: #37beb0;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -365,7 +372,7 @@ h4,
 }
 
 .card {
-  background-color: #ffe2e2 !important;
+  background-color: #f8f8f8 !important;
 }
 
 .darker-border {
@@ -373,30 +380,30 @@ h4,
 }
 
 .prog-bar {
-  background-color: #d75281 !important;
+  background-color: #37beb0 !important;
 }
 
 .downloadcv,
 .downloadcv:visited {
   color: #fff !important;
-  background-color: #d75281 !important;
-  border-color: #d75281 !important;
+  background-color: #0c6170 !important;
+  border-color: #0c6170 !important;
 }
 
 .account,
 .account:visited,
 .account:hover:not(.btn) {
-  color: #d75281 !important;
+  color: #0c6170 !important;
 }
 
 a,
 a:visited {
-  color: #fff !important;
+  color: #0c6170 !important;
   text-decoration: none !important;
 }
 
 a:hover:not(.btn, .email, .controls) {
-  color: #d75281 !important;
+  color: #241e2f !important;
 }
 
 .bg-light {
@@ -404,7 +411,7 @@ a:hover:not(.btn, .email, .controls) {
   margin-right: 11px;
   border-top-right-radius: 2rem !important;
   border-top-left-radius: 2rem !important;
-  background-color: #ff5975 !important;
+  background-color: #eab274 !important;
   font-size: larger !important;
   font-weight: 400 !important;
 }
@@ -412,28 +419,28 @@ a:hover:not(.btn, .email, .controls) {
 .bg-color {
   margin-left: 50px;
   border-bottom-left-radius: 2rem !important;
-  background-color: #ff5975 !important;
+  background-color: #dcebee !important;
   font-size: larger !important;
   font-weight: 400 !important;
 }
 
 .controls,
 .controls:visited {
-  color: #fff !important;
+  color: #241e2f !important;
   text-decoration: none;
 }
 
 .controls:hover {
-  color: #000 !important;
+  color: #37beb0 !important;
 }
 
 .escape,
 .escape:visited {
-  color: #000 !important;
+  color: #241e2f !important;
 }
 
 .escape:hover {
-  color: #d75281 !important;
+  color: #241e2f !important;
 }
 
 @media (min-width: 990px) {
@@ -451,5 +458,14 @@ a:hover:not(.btn, .email, .controls) {
 @media (min-width: 1400px) {
   .page-nav {
     margin-left: 470px !important;
+  }
+}
+
+@media (min-width: 320px) {
+  .card-body-px-lg-5-px-sm-3 {
+    position: sticky !important;
+    top: 16px;
+    display: flex; /* Center horizontally */
+    justify-content: center;
   }
 }

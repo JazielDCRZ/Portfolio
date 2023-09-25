@@ -33,7 +33,8 @@ li {
   vertical-align: middle;
   border-radius: 50%;
   overflow: hidden;
-  border: 5px solid #0c6170;
+  border: 5px solid;
+  border-color: #0c6170;
 }
 
 .avatar img {
@@ -336,7 +337,7 @@ h4,
 .project-item-icon-box {
   --scale: 0.8;
 
-  background: #fff;
+  background: #fff !important;
   color: #37beb0;
   position: absolute;
   top: 50%;

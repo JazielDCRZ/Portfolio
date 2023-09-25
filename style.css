@@ -255,7 +255,7 @@ h4,
   }
 
   body::-webkit-scrollbar-track {
-    background: #fff;
+    background: #fff !important;
   }
 
   body::-webkit-scrollbar-thumb {
@@ -372,7 +372,7 @@ h4,
 }
 
 .card {
-  background-color: #f8f8f8 !important;
+  background-color: #fff !important;
 }
 
 .darker-border {
